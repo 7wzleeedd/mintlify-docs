@@ -1,107 +1,76 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: 'Terms of Service'
+description: 'Official Terms of Service for the Loom Discord Bot'
 ---
 
 <Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding. <br />
-  Please upgrade to ```docs.json``` before proceeding and delete the legacy ```mint.json``` file.
+  By using Loom, you agree to the following terms. If you do not agree with these terms, please do not use the bot.
 </Info>
 
-Follow these steps to install and run Mintlify on your operating system:
+## 1. Usage Requirements
 
-**Step 1**: Install Mintlify:
+To use Loom, you must have a valid Discord account and be at least 13 years of age. Use of Loom must comply with [Discord's Terms of Service](https://discord.com/terms) and [Community Guidelines](https://discord.com/guidelines).
 
-<CodeGroup>
+### 1.1 Prohibited Activities
 
-  ```bash npm
-  npm i -g mintlify
-  ```
+You may **not** use Loom to:
+- Harass, threaten, or harm others.
+- Automate or spam Discord servers in a disruptive way.
+- Bypass or interfere with Discord's moderation tools.
+- Engage in illegal or unethical behavior.
 
-```bash yarn
-yarn global add mintlify
-```
+## 2. Data Collection & Privacy
 
-</CodeGroup>
-
-**Step 2**: Navigate to the docs directory (where the `docs.json` file is located) and execute the following command:
-
-```bash
-mintlify dev
-```
-
-A local preview of your documentation will be available at `http://localhost:3000`.
-
-### Custom Ports
-
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. To run Mintlify on port 3333, for instance, use this command:
-
-```bash
-mintlify dev --port 3333
-```
-
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
-
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
-
-## Mintlify Versions
-
-Please note that each CLI release is associated with a specific version of Mintlify. If your local website doesn't align with the production version, please update the CLI:
-
-<CodeGroup>
-
-```bash npm
-npm i -g mintlify@latest
-```
-
-```bash yarn
-yarn global upgrade mintlify
-```
-
-</CodeGroup>
-
-## Validating Links
-
-The CLI can assist with validating reference links made in your documentation. To identify any broken links, use the following command:
-
-```bash
-mintlify broken-links
-```
-
-## Deployment
+Loom may collect the following types of data to function properly:
+- User IDs
+- Server IDs
+- Message content (only for bot commands)
+- Configuration settings
 
 <Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
+  Loom does **not** store private messages or any data beyond what's required for its features to work. We respect user privacy and comply with Discord's data policies.
 </Tip>
 
-If the deployment is successful, you should see the following:
+We do not sell or share your data with third parties. You can request removal of your data by contacting the bot owner or team.
+
+## 3. Uptime and Availability
+
+We aim to keep Loom online and operational, but we do **not** guarantee 24/7 uptime. Downtime may occur due to:
+- Maintenance
+- Discord API outages
+- Unexpected bugs
 
 <Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
+  <img src="/images/uptime-placeholder.png" alt="Uptime status" style={{ borderRadius: '0.5rem' }} />
 </Frame>
 
-## Code Formatting
+## 4. Liability
 
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
+Loom is provided **as is**, without warranties of any kind. We are **not** liable for:
+- Loss of data
+- Server disruption
+- Abuse of bot features by other users
 
-## Troubleshooting
+Use Loom at your own risk.
+
+## 5. Modifications
+
+We reserve the right to modify these Terms at any time. Continued use of the bot constitutes acceptance of the new terms.
 
 <AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall mintlify: `npm install -g mintlify`
+  <Accordion title="What happens if the terms change?">
+    We'll do our best to announce major changes in our support server or directly via the bot. Minor changes may not be explicitly announced.
   </Accordion>
-
-  <Accordion title="Issue: Encountering an unknown error">
   
-    Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
+  <Accordion title="Can I opt out of the terms?">
+    If you do not agree with the updated terms, your only option is to stop using Loom and remove it from your server.
   </Accordion>
 </AccordionGroup>
 
-Curious about what changed in the CLI version? [Check out the CLI changelog.](https://www.npmjs.com/package/mintlify?activeTab=versions)
+## 6. Contact
+
+If you have any questions or concerns about these terms, reach out to the Loom team via our [Support Server](https://discord.gg/your-server-link) or email us at: `support@loomdiscordbot.com`
+
+---
+
+_Last updated: June 23, 2025_
